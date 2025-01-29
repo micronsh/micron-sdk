@@ -306,9 +306,6 @@ class ConversationManager {
 ```typescript
 import { MicronClient } from 'micron-sdk';
 
-// Development environment
-const devClient = new MicronClient('https://dev-api.micron.sh');
-
 // Production with custom timeout
 const timeoutController = new AbortController();
 setTimeout(() => timeoutController.abort(), 5000);
