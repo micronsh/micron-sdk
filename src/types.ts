@@ -1,4 +1,4 @@
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T> {
   data: T;
   timestamp?: string;
 }

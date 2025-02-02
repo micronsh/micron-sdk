@@ -8,6 +8,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // Custom rules here
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 }; 

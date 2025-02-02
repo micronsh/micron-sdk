@@ -9,7 +9,11 @@ async function main() {
     const tokenInfo = await client.getToken(invalidTokenAddress);
     console.log('Token Information:', tokenInfo);
   } catch (error) {
-    console.error('Failed to get token:', error.message);
+    if (error instanceof Error) {
+      console.error('Failed to get token:', error.message);
+    } else {
+      console.error('Failed to get token:', String(error));
+    }
   }
 
   try {
